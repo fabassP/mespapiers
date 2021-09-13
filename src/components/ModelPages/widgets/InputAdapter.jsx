@@ -23,6 +23,7 @@ const InputAdapter = ({ onChange, schema }) => {
           onChange={evt => setValue(evt.target.value)}
           placeholder="..."
           value={value}
+          autoFocus
         />
       </div>
       <DialogActions disableSpacing className={'columnLayout'}>

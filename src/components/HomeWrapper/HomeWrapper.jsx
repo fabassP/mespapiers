@@ -10,7 +10,7 @@ import Home from 'src/components/Home/Home'
 
 const HomeWrapper = () => {
   const { isStepperDialogOpen } = useStepperDialogContext()
-  const { allPapers, isQueryLoading } = useQuery(getAllPapers)
+  const { data: allPapers, isQueryLoading } = useQuery(getAllPapers)
 
   return !isStepperDialogOpen ? (
     isQueryLoading ? (

@@ -10,7 +10,7 @@ import PaperLine from 'src/components/Papers/PaperLine'
 
 const PapersList = () => {
   const { t } = useI18n()
-  const { allPapers } = useQuery(getAllPapers)
+  const { data: allPapers } = useQuery(getAllPapers)
 
   return (
     <List>

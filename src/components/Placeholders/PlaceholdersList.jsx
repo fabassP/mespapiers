@@ -11,7 +11,7 @@ import { getPlaceholders } from 'src/utils/getPlaceholders'
 
 const PlaceholdersList = () => {
   const { t } = useI18n()
-  const { allPapers } = useQuery(getAllPapers)
+  const { data: allPapers } = useQuery(getAllPapers)
   const allPlaceholders = useMemo(() => getPlaceholders(allPapers || []), [
     allPapers
   ])
