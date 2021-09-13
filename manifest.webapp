@@ -33,6 +33,11 @@
       "description": "Required to access the files",
       "type": "io.cozy.files",
       "verbs": ["ALL"]
+    },
+    "contacts": {
+      "description": "Required to access the contacts",
+      "type": "io.cozy.contacts",
+      "verbs": ["GET"]
     }
   }
 }

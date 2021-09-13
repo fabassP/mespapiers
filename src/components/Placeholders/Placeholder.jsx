@@ -83,6 +83,29 @@ const AllPlaceholdersChoices = ({ onClick }) => {
   )
 }
 
+// TODO
+const contactPage = {
+  model: {
+    schema: {
+      type: 'object',
+      required: ['contact'],
+      properties: {
+        contact: {
+          type: 'string',
+          illustration: 'Account.svg',
+          text: 'PaperJSON.IDCard.page01.text'
+        }
+      }
+    },
+    uiSchema: {
+      contact: {
+        'ui:widget': 'ListContactAdapter',
+        'ui:options': { label: false }
+      }
+    }
+  }
+}
+
 const Placeholder = ({ placeholder, divider }) => {
   const classes = useStyles()
   const { t } = useI18n()
@@ -107,7 +130,7 @@ const Placeholder = ({ placeholder, divider }) => {
     if (formModel) {
       // Set Dialog modal
       setStepperDialogTitle(formModel.label)
-      setAllCurrentPagesDefinitions(formModel.pages)
+      setAllCurrentPagesDefinitions([...formModel.pages, contactPage])
       // Set ActionMenu
       setIsImportDropdownDisplayed(true)
     }

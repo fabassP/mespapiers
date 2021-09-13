@@ -6,6 +6,10 @@
     "next": "Suivant",
     "replace": "Remplacer"
   },
+  "ContactListAdapter": {
+    "me": "Moi (%{name})",
+    "other": "Une autre personne"
+  },
   "Home": {
     "Empty": {
       "text": "Gardez les toujours sur vous dans un espace sécurisé pour simplifier vos démarches administratives. Ils ne seront jamais utilisés sans votre consentement explicite.",
@@ -30,6 +34,9 @@
     "other": "Autres..."
   },
   "PaperJSON": {
+    "ContactList": {
+      "title": "À qui appartient cette carte d’identité ?"
+    },
     "IDCard": {
       "page01": {
         "text": "Photographier la face avant de votre carte d’identité"

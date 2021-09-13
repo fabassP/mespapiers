@@ -4,15 +4,17 @@ import Form from 'react-jsonschema-form'
 import { useStepperDialogContext } from 'src/components/Hooks/useStepperDialogContext'
 import FileInputAdapter from 'src/components/ModelPages/widgets/FileInputAdapter'
 import InputAdapter from 'src/components/ModelPages/widgets/InputAdapter'
+import ListContactAdapter from 'src/components/ModelPages/widgets/ContactListAdapter'
+
 import './styles.styl'
 
-const ObjectFieldTemplate = props => {
-  return props.properties.map(element => {
+const ObjectFieldTemplate = ({ properties }) => {
+  return properties.map(element => {
     return <Fragment key={element.name}>{element.content}</Fragment>
   })
 }
 
-const widgets = { FileInputAdapter, InputAdapter }
+const widgets = { FileInputAdapter, InputAdapter, ListContactAdapter }
 const FormSchema = () => {
   const { allCurrentPages, currentPageIndex } = useStepperDialogContext()
   const [state, setState] = useState({})
