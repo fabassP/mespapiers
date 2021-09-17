@@ -216,7 +216,8 @@
                 "info02": {
                   "type": "string",
                   "illustration": "illu_passport_peremptionDate.svg",
-                  "text": "PaperJSON.Passport.page04.text"
+                  "text": "PaperJSON.Passport.page04.text",
+                  "reter"; ... 
                 }
               }
             },
